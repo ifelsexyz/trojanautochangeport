@@ -1,0 +1,10 @@
+[Unit]
+Description=ChangePort Service for Trojan
+
+[Service]
+ExecStart=/file/changeport
+Restart=on-failure
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
